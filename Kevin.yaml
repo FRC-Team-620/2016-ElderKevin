@@ -273,13 +273,13 @@ Children:
           default: '0'
           name: Reverse Channel (Solenoid)
           validators: &id015 [Solenoid]
-          value: '1'
+          value: '0'
         Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: &id016 ['0', '1', '2', '3', '4', '5', '6', '7']
           default: '0'
           name: Forward Channel (Solenoid)
           validators: &id017 [Solenoid]
-          value: '0'
+          value: '1'
       Base: Double Solenoid
       Name: TopSolenoid
     - Children: []
@@ -301,13 +301,13 @@ Children:
           default: '0'
           name: Reverse Channel (Solenoid)
           validators: *id015
-          value: '3'
+          value: '2'
         Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id016
           default: '0'
           name: Forward Channel (Solenoid)
           validators: *id017
-          value: '2'
+          value: '3'
       Base: Double Solenoid
       Name: BottomSolenoid
     Properties:
@@ -404,7 +404,7 @@ Children:
           default: '1'
           name: Button
           validators: null
-          value: '7'
+          value: '5'
         Command: !!robotbuilder.data.properties.TypeSelectionProperty
           default: None
           name: Command
@@ -416,7 +416,7 @@ Children:
           default: whileHeld
           name: When to Run
           validators: null
-          value: whileHeld
+          value: whenPressed
       Base: Joystick Button
       Name: BumperL
     - Children: []
@@ -433,19 +433,19 @@ Children:
           default: '1'
           name: Button
           validators: null
-          value: '1'
+          value: '6'
         Command: !!robotbuilder.data.properties.TypeSelectionProperty
           default: None
           name: Command
           type: Command
           validators: *id019
-          value: SpeedDown
+          value: SpeedUp
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id020
           default: whileHeld
           name: When to Run
           validators: null
-          value: whileHeld
+          value: whenPressed
       Base: Joystick Button
       Name: BumperR
     - Children: []
@@ -789,9 +789,8 @@ Children:
   Base: Commands
   Name: Commands
 Properties:
-  Eclipse Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Team
-      B\workspace', extension: null, folder: true, name: Eclipse Workspace, validators: null,
-    value: 'C:\Users\Team B\Desktop'}
+  Eclipse Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robots\workspace',
+    extension: null, folder: true, name: Eclipse Workspace, validators: null, value: .\}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
   Autonomous command parameters: !!robotbuilder.data.properties.ParametersProperty
@@ -809,9 +808,8 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Team
-      B\', extension: null, folder: true, name: Wiring file location, validators: null,
-    value: 'C:\Users\lizwe'}
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\robots\',
+    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\lizwe'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
 Base: Robot

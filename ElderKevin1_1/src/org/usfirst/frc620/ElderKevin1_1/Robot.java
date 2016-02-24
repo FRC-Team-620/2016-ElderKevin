@@ -100,7 +100,7 @@ public class Robot extends IterativeRobot {
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
-        Scheduler.getInstance().run();\
+        Scheduler.getInstance().run();
         System.out.println(RobotMap.driveTrainEncoderL.get());
         System.out.println(RobotMap.driveTrainEncoderR.get());
 

@@ -50,5 +50,22 @@ public class Forklift extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+
+    public void extendBottom() {
+        RobotMap.forkliftBottomSolenoid.set(DoubleSolenoid.Value.kForward);
+    }
+
+    public void extendTop() {
+        RobotMap.forkliftTopSolenoid.set(DoubleSolenoid.Value.kForward);
+    }
+
+    public void retractBottom() {
+        RobotMap.forkliftBottomSolenoid.set(DoubleSolenoid.Value.kReverse);
+    }
+
+    public void retractTop() {
+        RobotMap.forkliftTopSolenoid.set(DoubleSolenoid.Value.kReverse);
+    }
+
 }
 

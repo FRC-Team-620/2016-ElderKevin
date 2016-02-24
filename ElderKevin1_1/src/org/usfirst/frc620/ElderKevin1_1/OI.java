@@ -70,10 +70,10 @@ public class OI {
         
         buttonY = new JoystickButton(joystick, 4);
         buttonY.whileHeld(new StopTeeth());
-        bumperR = new JoystickButton(joystick, 1);
-        bumperR.whileHeld(new SpeedDown());
-        bumperL = new JoystickButton(joystick, 7);
-        bumperL.whileHeld(new SpeedDown());
+        bumperR = new JoystickButton(joystick, 6);
+        bumperR.whenPressed(new SpeedUp());
+        bumperL = new JoystickButton(joystick, 5);
+        bumperL.whenPressed(new SpeedDown());
         buttonX = new JoystickButton(joystick, 3);
         buttonX.whenPressed(new Devour());
         buttonA = new JoystickButton(joystick, 1);

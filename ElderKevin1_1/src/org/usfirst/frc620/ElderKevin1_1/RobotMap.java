@@ -99,10 +99,10 @@ public class RobotMap {
         forkliftCompressor = new Compressor(6);
         
         
-        forkliftTopSolenoid = new DoubleSolenoid(6, 0, 1);
+        forkliftTopSolenoid = new DoubleSolenoid(6, 1, 0);
         LiveWindow.addActuator("Forklift", "TopSolenoid", forkliftTopSolenoid);
         
-        forkliftBottomSolenoid = new DoubleSolenoid(6, 2, 3);
+        forkliftBottomSolenoid = new DoubleSolenoid(6, 3, 2);
         LiveWindow.addActuator("Forklift", "BottomSolenoid", forkliftBottomSolenoid);
         
 
