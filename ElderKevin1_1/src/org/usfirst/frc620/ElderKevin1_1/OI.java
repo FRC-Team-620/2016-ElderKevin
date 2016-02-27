@@ -87,7 +87,7 @@ public class OI {
         SmartDashboard.putData("Expel", new Expel());
         SmartDashboard.putData("SpeedUp", new SpeedUp());
         SmartDashboard.putData("SpeedDown", new SpeedDown());
-        SmartDashboard.putData("Drive: feet", new Drive(1));
+        SmartDashboard.putData("Drive: default1", new Drive(1, 0));
         SmartDashboard.putData("DriveWithoutEncoder: default", new DriveWithoutEncoder(2.0, .5));
         SmartDashboard.putData("Turn: degree", new Turn(0));
         SmartDashboard.putData("DriveStraight", new DriveStraight());
